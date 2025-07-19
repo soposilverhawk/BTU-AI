@@ -4,7 +4,9 @@ import Header from './Components/Global/Header/Header';
 
 function App() {
   return (
-    <Header />
+      <>
+      <Header />
+      </>
   )
 }
 

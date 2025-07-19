@@ -5,15 +5,12 @@ export const ToolbarTop = styled(Toolbar, {
   shouldForwardProp: (prop) => prop !== '$colors',
 })(({ $colors }) => ({
   backgroundColor: $colors.secondaryGray,
-  display: "flex",
-  justifyContent: "space-between",
 }));
 
 export const ToolbarBottom = styled(Toolbar)(({ theme }) => ({
   backgroundColor: "#fff",
-  width: "70%",
-  justifyContent: "space-between",
   overflow: "hidden",
+  width: "90%"
 }));
 
 export const NavButton = styled(Button)(({ theme }) => ({
