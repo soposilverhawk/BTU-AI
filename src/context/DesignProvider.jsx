@@ -11,6 +11,7 @@ function DesignProvider({ children }) {
             secondaryPink: "#FD007D80",
             secondaryGray: "#474747",
             tertiaryPink: "#FD007D70",
+            heroGradient: "linear-gradient(90deg, #0B108DA6, #FD007DB5)"
         },
         spacing: {
             xs: "5px",

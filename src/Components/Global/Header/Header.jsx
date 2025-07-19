@@ -1,6 +1,6 @@
 import React from "react";
 import { AppBar, Box, Typography } from "@mui/material";
-import logo from "../../../assets/shared/BTU-logo.png";
+import logo from "../../../assets/shared/logo/BTU-logo-primary.png";
 import { Link, useNavigate } from "react-router-dom";
 import { socialItems, appNavItems } from "../../../data/shared/shared";
 import { useDesign } from "../../../context/DesignProvider";
