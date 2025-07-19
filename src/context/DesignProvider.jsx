@@ -13,6 +13,7 @@ function DesignProvider({ children }) {
             tertiaryPink: "#FD007D70",
         },
         spacing: {
+            xs: "5px",
             sm: "8px",
             md: "16px"
         },
