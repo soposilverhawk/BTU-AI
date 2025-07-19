@@ -12,6 +12,14 @@ function DesignProvider({ children }) {
             secondaryGray: "#474747",
             tertiaryPink: "#FD007D70",
         },
+        spacing: {
+            sm: "8px",
+            md: "16px"
+        },
+        borderRadius: {
+            btnRect: "12px",
+            btnCircle: "50%"
+        },
         fontSizes: {
             heading1: "36px",
             heading2: "24px",
