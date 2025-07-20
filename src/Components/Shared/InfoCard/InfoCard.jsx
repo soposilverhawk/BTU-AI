@@ -4,25 +4,34 @@ import logo from "../../../assets/shared/logo/BTU-logo-secondary.png";
 
 function InfoCard({ variant = "", cardImg, cardTxt, bgColor }) {
   const { spacing } = useDesign();
+
+  // shared styles
+  const baseStyles = {
+    width: "280px",
+    height: "307px",
+    display: "flex",
+    flexDirection: "column",
+    color: "#fff",
+  };
+  // variant styles
+  const successVariantStyles = {
+    background: `url(${cardImg})`,
+    justifyContent: "center",
+    alignItems: "center",
+    position: "relative",
+  };
+  const programesVariantStyles = {
+    backgroundColor: bgColor,
+    paddingTop: spacing.sm,
+  };
+
   return (
     <div
       style={{
-        width: "280px",
-        height: "307px",
-        display: "flex",
-        flexDirection: "column",
-        color: "#fff",
+        ...baseStyles,
         ...(variant === "success"
-          ? {
-              background: `url(${cardImg})`,
-              justifyContent: "center",
-              alignItems: "center",
-              position: "relative",
-            }
-          : {
-              backgroundColor: bgColor,
-              paddingTop: spacing.sm,
-            }),
+          ? successVariantStyles
+          : programesVariantStyles),
       }}
     >
       {variant === "success" ? (
