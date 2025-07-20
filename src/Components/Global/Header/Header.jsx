@@ -24,14 +24,12 @@ export default function Header() {
     >
       <ToolbarTop $colors={colors}>
         <LayoutWrapper>
-          <Box>
-            <Typography>
-              <span style={{ color: colors.primaryPink }}>BTU AI4Globe</span>{" "}
-              საქართველოდან მთელს მსოფლიოში,{" "}
-              <span style={{ color: colors.primaryPink }}>AI</span> წიგნიერების
-              გასაძლიერებლად
-            </Typography>
-          </Box>
+          <Typography>
+            <span style={{ color: colors.primaryPink }}>BTU AI4Globe</span>
+            საქართველოდან მთელს მსოფლიოში,
+            <span style={{ color: colors.primaryPink }}>AI</span>
+            წიგნიერების გასაძლიერებლად
+          </Typography>
           <ul
             style={{ display: "flex", alignItems: "center", gap: spacing.xs }}
           >

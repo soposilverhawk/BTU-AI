@@ -1,4 +1,4 @@
-import { Toolbar, Button } from "@mui/material";
+import { Toolbar, Button, Box } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 export const ToolbarTop = styled(Toolbar, {
@@ -10,7 +10,6 @@ export const ToolbarTop = styled(Toolbar, {
 export const ToolbarBottom = styled(Toolbar)(({ theme }) => ({
   backgroundColor: "#fff",
   overflow: "hidden",
-  width: "90%"
 }));
 
 export const NavButton = styled(Button)(({ theme }) => ({
