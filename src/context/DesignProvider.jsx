@@ -12,6 +12,7 @@ function DesignProvider({ children }) {
             secondaryGray: "#474747",
             tertiaryPink: "#FD007D70",
             heroGradient: "linear-gradient(90deg, #0B108DA6, #FD007DB5)"
+            
         },
         spacing: {
             xs: "5px",

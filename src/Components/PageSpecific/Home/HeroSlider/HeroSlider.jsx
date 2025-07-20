@@ -32,7 +32,7 @@ function HeroSlider() {
         justifyContent: "center",
         alignItems: "center",
         backgroundPosition: "center",
-        transition: "all 0.5s ease-in"
+        transition: "all 0.5s ease-in",
       }}
     >
       {/* background overlay: */}
@@ -51,7 +51,7 @@ function HeroSlider() {
           display: "flex",
           justifyContent: "space-around",
           height: "90%",
-          width: "100%"
+          width: "100%",
         }}
       >
         <HeroSliderControls variant="previous" handleClick={getPrevSlide} />
@@ -76,7 +76,15 @@ function HeroSlider() {
           >
             {currentSlide.title}
           </h1>
-          <p style={{ fontSize: fontSizes.heading1, textAlign: "center", textTransform: "uppercase", fontWeight: "bold", width: "80%" }}>
+          <p
+            style={{
+              fontSize: fontSizes.heading1,
+              textAlign: "center",
+              textTransform: "uppercase",
+              fontWeight: "bold",
+              width: "80%",
+            }}
+          >
             {currentSlide.txt}
           </p>
           <img src={logo} alt="BTU logo" style={{ width: 100, height: 125 }} />

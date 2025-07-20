@@ -29,3 +29,33 @@ export const sliderInfo = [
     txt: "Nesciunt repellat praesentium libero magni quae similique qui.",
   },
 ];
+
+export const bachelorProgrammes = [
+  {
+    id: uuid(),
+    program: "ორი სადიპლომო პროგრამა",
+  },
+  {
+    id: uuid(),
+    program:
+      "BTU-ს კომპიუტერული მეცნიერება და ხელოვნური ინტელექტის საბაკალავრო პროგრამის სტუდენტებს შესაძლებლობა აქვთ ბოლო, მეოთხე აკადემიური წლის პარტნიორ უნივერსიტეტში გატარებით, ერთდროულად ორი უნივერსიტეტის დიპლომი მოიპოვონ.",
+  },
+];
+
+export const programLinks = [
+  {
+    id: uuid(),
+    name: "პროგრამა",
+    link: "https://drive.google.com/file/d/1JCFceATzAUG6eisFGXBhJw7VfXfeZ9e_/view",
+  },
+  {
+    id: uuid(),
+    name: "პროგრამის ბროშურა",
+    link: "https://btu.edu.ge/wp-content/uploads/2024/07/programis-broshura.-komp.pdf",
+  },
+  {
+    id: uuid(),
+    name: "გაცვლითი პროგრამები",
+    link: "https://btu.edu.ge/wp-content/uploads/2024/07/gatsvlithi-komp.pdf",
+  },
+];
