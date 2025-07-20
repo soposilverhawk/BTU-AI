@@ -33,7 +33,7 @@ function BAProgrammeInfo() {
           <div>
             <h2
               style={{
-                fontSize: fontSizes.heading1,
+                fontSize: fontSizes.heading2,
                 fotnWeight: "bold",
                 borderBottom: `1px solid ${colors.primaryPink}`,
                 paddingBottom: spacing.md,

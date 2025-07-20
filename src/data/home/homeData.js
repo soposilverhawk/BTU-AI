@@ -26,7 +26,7 @@ export const sliderInfo = [
     id: uuid(),
     bg: fourthSliderBg,
     title: "Lorem ipsum dolor sit amet.",
-    txt: "Nesciunt repellat praesentium libero magni quae similique qui.",
+    txt: "Nesciunt repellat praesentium magni.",
   },
 ];
 

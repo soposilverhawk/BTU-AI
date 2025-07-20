@@ -24,8 +24,9 @@ function DesignProvider({ children }) {
             btnCircle: "50%"
         },
         fontSizes: {
-            heading1: "36px",
-            heading2: "24px",
+            heading1: "60px",
+            heading2: "36px",
+            heading3: "24px",
             text: "16px",
         }
     };
