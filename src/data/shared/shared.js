@@ -44,42 +44,41 @@ export const socialItems = [
     id: uuid(),
     name: "Facebook",
     icon: facebookIcon,
-    target: "_blank",
+
     smLink: "https://www.facebook.com/BTUGEORGIA",
   },
   {
     id: uuid(),
     name: "LinkedIn",
     icon: linkedInIcon,
-    target: "_blank",
+
     smLink: "https://www.linkedin.com/school/business-and-technology-university-%E2%80%A2-btu/?originalSubdomain=ge"
   },
   {
     id: uuid(),
     name: "Instagram",
     icon: instagramIcon,
-    target: "_blank",
+
     smLink: "https://www.instagram.com/btugeorgia/?hl=en"
   },
   {
     id: uuid(),
     name: "TikTok",
     icon: tiktokIcon,
-    target: "_blank",
     smLink: "https://www.tiktok.com/@btu.university"
   },
   {
     id: uuid(),
     name: "YouTube",
     icon: youtubeIcon,
-    target: "_blank",
+
     smLink: "https://www.youtube.com/@btu-businessandtechnologyu6589"
   },
   {
     id: uuid(),
     name: "Google",
     icon: googleIcon,
-    target: "_blank",
+
     smLink: "https://btu.edu.ge/"
   }
 ];

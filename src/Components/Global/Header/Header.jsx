@@ -35,9 +35,9 @@ export default function Header() {
           <ul
             style={{ display: "flex", alignItems: "center", gap: spacing.xs }}
           >
-            {socialItems.map(({ name, id, icon, target, smLink }) => (
+            {socialItems.map(({ name, id, icon, smLink }) => (
               <li key={id}>
-                <a href={smLink} target={target}>
+                <a href={smLink} target="_blank">
                   <img src={icon} alt={name} />
                 </a>
               </li>
