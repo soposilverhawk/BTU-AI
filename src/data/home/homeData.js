@@ -3,6 +3,15 @@ import firstSliderBg from "../../assets/slider/slider-img-1.png";
 import secondSliderBg from "../../assets/slider/slider-img-2.jpg";
 import thirdSliderBg from "../../assets/slider/slider-img-3.jpeg";
 import fourthSliderBg from "../../assets/slider/slider-img-4.jpg";
+import successStoryCard1 from "../../assets/homePage/cards/success/success-card-1.jpg";
+import successStoryCard2 from "../../assets/homePage/cards/success/success-card-2.png";
+import successStoryCard3 from "../../assets/homePage/cards/success/success-card-3.jpg";
+import successStoryCard4 from "../../assets/homePage/cards/success/success-card-4.jpg";
+import programmesCard1 from "../../assets/homePage/cards/programmes/programs-card-1.png";
+import programmesCard2 from "../../assets/homePage/cards/programmes/programs-card-2.png";
+import programmesCard3 from "../../assets/homePage/cards/programmes/programs-card-3.png";
+import programmesCard4 from "../../assets/homePage/cards/programmes/programs-card-4.png";
+
 export const sliderInfo = [
   {
     id: uuid(),
@@ -57,5 +66,59 @@ export const programLinks = [
     id: uuid(),
     name: "გაცვლითი პროგრამები",
     link: "https://btu.edu.ge/wp-content/uploads/2024/07/gatsvlithi-komp.pdf",
+  },
+];
+
+export const successStoriesCards = [
+  {
+    id: uuid(),
+    title: "გაცვლითი პროგრამების სტუდენტები",
+    titleBg: "#FD007D",
+    cardImg: successStoryCard1,
+  },
+  {
+    id: uuid(),
+    title: "კონკურსები და გამარჯვებები",
+    titleBg: "#29CDFF",
+    cardImg: successStoryCard2,
+  },
+  {
+    id: uuid(),
+    title: "სტარტაპ კატალოგი",
+    titleBg: "#FD007D",
+    cardImg: successStoryCard3,
+  },
+  {
+    id: uuid(),
+    title: "კურსდამთავრებულთა წარმატება",
+    titleBg: "#FD007D",
+    cardImg: successStoryCard4,
+  },
+];
+
+export const programmesCards = [
+  {
+    id: uuid(),
+    cardImg: programmesCard1,
+    cardBgColor: "#FC4B58",
+    txt: "1500 ქალის გადამზადება ტექნოლოგიებში – უმსხვილესი პროექტი BTU-ში USAID-თან პარტნიორობით ხორციელდება;",
+  },
+  {
+    id: uuid(),
+    cardImg: programmesCard2,
+    cardBgColor: "#070B80",
+    txt: "Women in AI-ის ფარგლებში, მთელი საქართველოს მასშტაბით 200 ქალი შეირჩა და  9 თვის განმავლობაში ხელოვნურ ინტელექტისა და ვებ-დეველოპმენტის მიმართულებებით გადამზადა.",
+  },
+  {
+    id: uuid(),
+    cardImg: programmesCard3,
+    cardBgColor: "#FD007D",
+    txt: "საქართველოში მცხოვრები უკრაინელი ქალები ტექნოლოგიებს შეისწავლიან. პროექტს-BTU, გაეროს ქალთა ორგანიზაციისა  და იაპონიის მთავრობის მხარდაჭერით განახორციელებს.",
+  },
+  {
+    id: uuid(),
+    cardImg: programmesCard4,
+    cardBgColor: "#000046",
+    txt: "ევროკავშირის მიერ მხარდაჭერილი პროექტი „ქალების მენტორობა ტექ პროგრამებში’’ მიზნად ისახავს, სამი ნაკადის განმავლობაში, 1100 ბენეფიციარისა და 320 მენტორის მოზიდვას.",
   },
 ];
