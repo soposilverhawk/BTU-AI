@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "./Components/Shared/Button/Button";
 import Header from "./Components/Global/Header/Header";
 import AppRoutes from "./pages/Home/Home";
+import Footer from "./Components/Global/Footer/Footer";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <main>
         <AppRoutes />
       </main>
+      <Footer />
     </>
   );
 }

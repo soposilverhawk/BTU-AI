@@ -82,3 +82,5 @@ export const socialItems = [
     smLink: "https://btu.edu.ge/"
   }
 ];
+
+export const contactInfo = ["თბილისი 0162, საქართველო ი.ჭავჭავაძის გამზირი N82", "[+995 32] 2 195 015"]
