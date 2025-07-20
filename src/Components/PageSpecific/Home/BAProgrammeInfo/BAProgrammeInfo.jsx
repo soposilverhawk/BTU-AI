@@ -4,6 +4,7 @@ import {
   bachelorProgrammes,
   programLinks,
 } from "../../../../data/home/homeData";
+import SectionHeading from "../shared/SectionHeading"
 import Video from "./Video";
 
 function BAProgrammeInfo() {
@@ -31,25 +32,7 @@ function BAProgrammeInfo() {
         >
           {/* info title container*/}
           <div>
-            <h2
-              style={{
-                fontSize: fontSizes.heading2,
-                fotnWeight: "bold",
-                borderBottom: `1px solid ${colors.primaryPink}`,
-                paddingBottom: spacing.md,
-                width: "60%",
-              }}
-            >
-              <span
-                style={{
-                  color: colors.primaryPink,
-                  marginRight: "0.5rem",
-                }}
-              >
-                AI
-              </span>
-              ბაკალავრის პროგრამა
-            </h2>
+            <SectionHeading title="ბაკალავრის პროგრამა" isHighlited={true} highLightTxt="AI" />
           </div>
           {/* programme lists - list 1 */}
           <div>
