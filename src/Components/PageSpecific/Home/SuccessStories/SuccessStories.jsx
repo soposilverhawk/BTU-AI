@@ -3,7 +3,6 @@ import SectionHeading from "../shared/SectionHeading";
 import InfoCard from "../../../Shared/InfoCard/InfoCard";
 import { successStoriesCards } from "../../../../data/home/homeData";
 
-console.log(successStoriesCards)
 
 
 function SuccessStories() {

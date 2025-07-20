@@ -3,7 +3,7 @@ import { useDesign } from "../../../context/DesignProvider";
 import logo from "../../../assets/shared/logo/BTU-logo-secondary.png";
 
 function InfoCard({ variant = "", cardImg, cardTxt, bgColor }) {
-  const { spacing, fontSizes } = useDesign();
+  const { spacing } = useDesign();
   return (
     <div
       style={{
@@ -11,6 +11,7 @@ function InfoCard({ variant = "", cardImg, cardTxt, bgColor }) {
         height: "307px",
         display: "flex",
         flexDirection: "column",
+        color: "#fff",
         ...(variant === "success"
           ? {
               background: `url(${cardImg})`,
@@ -20,17 +21,25 @@ function InfoCard({ variant = "", cardImg, cardTxt, bgColor }) {
             }
           : {
               backgroundColor: bgColor,
+              paddingTop: spacing.sm,
             }),
       }}
     >
       {variant === "success" ? (
         <>
-          <div style={{ zIndex: 9000, display: "flex", flexDirection: "column", gap: "2rem", alignItems: "center" }}>
+          <div
+            style={{
+              zIndex: 9000,
+              display: "flex",
+              flexDirection: "column",
+              gap: "2rem",
+              alignItems: "center",
+            }}
+          >
             <img src={logo} alt="BTU logo" />
             <h3
               style={{
                 backgroundColor: bgColor,
-                color: "#fff",
                 padding: spacing.sm,
               }}
             >
@@ -52,7 +61,7 @@ function InfoCard({ variant = "", cardImg, cardTxt, bgColor }) {
       ) : (
         <>
           <img src={cardImg} alt={cardTxt} />
-          <p>{cardTxt}</p>
+          <p style={{ marginTop: "2rem" }}>{cardTxt}</p>
         </>
       )}
     </div>
