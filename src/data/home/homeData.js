@@ -1,8 +1,8 @@
 import { v4 as uuid } from "uuid";
-import firstSliderBg from "../../assets/slider/slider-img-1.png";
-import secondSliderBg from "../../assets/slider/slider-img-2.jpg";
-import thirdSliderBg from "../../assets/slider/slider-img-3.jpeg";
-import fourthSliderBg from "../../assets/slider/slider-img-4.jpg";
+import sliderBg1 from "../../assets/slider/slider-img-1.png";
+import sliderBg2 from "../../assets/slider/slider-img-2.jpg";
+import sliderBg3 from "../../assets/slider/slider-img-3.jpeg";
+import sliderBg4 from "../../assets/slider/slider-img-4.jpg";
 import successStoryCard1 from "../../assets/homePage/cards/success/success-card-1.jpg";
 import successStoryCard2 from "../../assets/homePage/cards/success/success-card-2.png";
 import successStoryCard3 from "../../assets/homePage/cards/success/success-card-3.jpg";
@@ -15,25 +15,25 @@ import programmesCard4 from "../../assets/homePage/cards/programmes/programs-car
 export const sliderInfo = [
   {
     id: uuid(),
-    bg: firstSliderBg,
+    bg: sliderBg1,
     title: "BTU AI ლექტორი",
     txt: "Web development fundamentals",
   },
   {
     id: uuid(),
-    bg: secondSliderBg,
+    bg: sliderBg2,
     title: "lorem ipsum",
     txt: "Machine Learning and AI models",
   },
   {
     id: uuid(),
-    bg: thirdSliderBg,
+    bg: sliderBg3,
     title: "Lorem ipsum dolor sit amet",
     txt: "consectetur adipisicing elit.",
   },
   {
     id: uuid(),
-    bg: fourthSliderBg,
+    bg: sliderBg4,
     title: "Lorem ipsum dolor sit amet.",
     txt: "Nesciunt repellat praesentium magni.",
   },
