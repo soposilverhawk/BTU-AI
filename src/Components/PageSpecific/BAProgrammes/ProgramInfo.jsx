@@ -48,7 +48,7 @@ function BAProgrammes() {
             borderActive={false}
             width="100%"
           />
-          <ul style={{ listStyleType: "disc" }}>
+          <ul style={{ listStyleType: "disc", paddingLeft: "1rem" }}>
             {AIProgram.programDetails.map(({ id, label, labelDescription }) => (
               <li key={id} style={{ fontWeight: "bold" }}>
                 {label} {labelDescription}
@@ -72,7 +72,7 @@ function BAProgrammes() {
           <Typography variant="body1">
             {AIProgram.additionalInfo.description}
           </Typography>
-          <ul style={{ listStyleType: "disc" }}>
+          <ul style={{ listStyleType: "disc", paddingLeft: "1rem" }}>
             {AIProgram.additionalInfo.internationalPrograms.map(
               ({ id, name, link }) => (
                 <li
@@ -85,6 +85,19 @@ function BAProgrammes() {
             )}
           </ul>
         </div>
+      </article>
+      <article>
+        <SectionHeading
+          title={null}
+          isHighlited={true}
+          highLightTxt="დეტალური ინფორმაცია საგნების შესახებ."
+          borderActive={false}
+        />
+        <ul style={{listStyleType: "disc", fontWeight: "bold", paddingLeft: "1rem", marginTop: "2rem"}}>
+          <li>
+            <a href="https://drive.google.com/file/d/1w1sFWQ8Vk0fajmO1VDgMH5nL2cqscnCE/view">პროგრამა</a>
+          </li>
+        </ul>
       </article>
     </section>
   );
