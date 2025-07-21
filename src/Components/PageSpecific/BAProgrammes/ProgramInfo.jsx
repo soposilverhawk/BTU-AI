@@ -2,6 +2,7 @@ import React from "react";
 import SectionHeading from "../Home/shared/SectionHeading";
 import { AIProgram } from "../../../data/BAPrograms/BAProgram";
 import { Typography } from "@mui/material";
+import ContactForm from "../../Shared/ContactForm/ContactForm";
 
 function BAProgrammes() {
   return (
@@ -9,10 +10,11 @@ function BAProgrammes() {
       style={{
         width: "100%",
         marginTop: "8rem",
-        height: "1500px",
+        height: "2000px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
+        gap: "6rem",
       }}
     >
       <article>
@@ -33,7 +35,6 @@ function BAProgrammes() {
       </article>
       <article
         style={{
-          height: "50%",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
@@ -86,7 +87,7 @@ function BAProgrammes() {
           </ul>
         </div>
       </article>
-      <article style={{marginTop: "3rem"}}>
+      <article style={{ marginTop: "3rem" }}>
         <SectionHeading
           title={null}
           isHighlited={true}
@@ -108,6 +109,7 @@ function BAProgrammes() {
           </li>
         </ul>
       </article>
+      <ContactForm title="თუ ხელოვნური ინტელექტის საბაკალავრო პროგრამით ხართ დაინტერესებული, შეავსეთ ფორმა დამატებითი ინფორმაციისა და სიახლეების მისაღებად" variant="AI-contact"/>
     </section>
   );
 }

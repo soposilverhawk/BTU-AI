@@ -2,16 +2,18 @@ import React from "react";
 import submitIcon from "../../../assets/shared/submit-icon.png";
 import { useDesign } from "../../../context/DesignProvider";
 
-function Button({ children = "", variant = "", onClick }) {
+function Button({ children = "", variant = "", onClick, width }) {
   const { colors, spacing, borderRadius, fontSizes } = useDesign();
 
   const baseStyles = {
     display: "flex",
     alignItems: "center",
+    justifyContent: "space-evenly",
     fontSize: fontSizes.text,
     cursor: "pointer",
     gap: spacing.md,
-    color: "#fff"
+    color: "#fff",
+    width: width ? width : null
   };
 
   const buttonType =
