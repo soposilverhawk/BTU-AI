@@ -21,6 +21,7 @@ function DesignProvider({ children }) {
         },
         borderRadius: {
             btnRect: "12px",
+            inputRadius: "30px",
             btnCircle: "50%"
         },
         fontSizes: {

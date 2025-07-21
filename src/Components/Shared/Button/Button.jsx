@@ -27,7 +27,7 @@ function Button({ children = "", variant = "", onClick }) {
         }
       : variant === "chatSubmit"
       ? {
-          backgroundColor: "#fff",
+          backgroundColor: "transparent",
           border: "1px solid #fff",
           borderRadius: borderRadius.btnCircle,
           padding: spacing.sm
@@ -36,7 +36,7 @@ function Button({ children = "", variant = "", onClick }) {
 
   return (
     <button
-      onClick={onClick}
+      onClick={buttonType === "formSubmit" || buttonType === "chatSubmit" ? null : onClick }
       type={buttonType}
       style={{ ...baseStyles, ...variantStyles }}
     >

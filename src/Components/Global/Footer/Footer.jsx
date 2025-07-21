@@ -3,6 +3,7 @@ import { useDesign } from "../../../context/DesignProvider";
 import logo from "../../../assets/shared/logo/BTU-logo-secondary.png";
 import { contactInfo } from "../../../data/shared/shared";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
+import ContactPopup from "../ContactPopup/ContactPopup";
 
 function Footer() {
   const { colors, spacing } = useDesign();
@@ -17,6 +18,7 @@ function Footer() {
         flexDirection: "column",
         justifyContent: "space-between",
         paddingTop: "5rem",
+        position: "relative"
       }}
     >
       {/* footer - top */}
@@ -61,6 +63,7 @@ function Footer() {
       >
         Copyright © 2024 - BTUSTUDENTS
       </div>
+      <ContactPopup />
     </footer>
   );
 }
