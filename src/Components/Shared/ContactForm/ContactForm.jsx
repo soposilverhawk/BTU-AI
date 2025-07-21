@@ -4,18 +4,41 @@ import { Typography } from "@mui/material";
 import Button from "../../Shared/Button/Button";
 
 function ContactForm({ variant, title }) {
+  const hasNoteInput = variant === "AI-contact" ? false : true;
   const { colors, fontSizes, borderRadius } = useDesign();
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     surname: "",
-    tel: "",
-    email: "",
-    note: "",
+    ...(!hasNoteInput && { email: "" }),
+    ...(!hasNoteInput && { tel: "" }),
+    ...(hasNoteInput && { note: "" }),
+    ...(!hasNoteInput && { receiveInfo: false }),
   });
+  const [submittedFormData, setSubmittedFormData] = useState(null);
 
   const handleInput = (event) => {
-    const { name, value } = event.target;
+    const { name, value, type } = event.target;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]:
+        type === "radio" && name === "receiveInfo" ? value === "true" : value,
+    }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setIsFormSubmitted(true);
+    setSubmittedFormData(formData);
+    setFormData({
+      name: "",
+      surname: "",
+      ...(!hasNoteInput && { email: "" }),
+      ...(!hasNoteInput && { tel: "" }),
+      ...(hasNoteInput && { note: "" }),
+      ...(!hasNoteInput && { receiveInfo: false }),
+    });
   };
 
   const inputContainerBase = {
@@ -71,7 +94,14 @@ function ContactForm({ variant, title }) {
       </h3>
       <form
         action=""
-        style={{ display: "flex", flexDirection: "column", gap: "40px", height: "100%", justifyContent: "space-between" }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "40px",
+          height: "100%",
+          justifyContent: "space-between",
+        }}
+        onSubmit={(e) => handleSubmit(e)}
       >
         {/* first row inputs */}
         <div style={rowBase}>
@@ -86,7 +116,7 @@ function ContactForm({ variant, title }) {
               id="name"
               placeholder="თქვენი სახელი"
               value={formData.name}
-              onChange={handleInput}
+              onChange={(e) => handleInput(e)}
               required
               style={inputBase}
             />
@@ -102,7 +132,7 @@ function ContactForm({ variant, title }) {
               id="surname"
               placeholder="თქვენი გვარი"
               value={formData.surname}
-              onChange={handleInput}
+              onChange={(e) => handleInput(e)}
               required
               style={inputBase}
             />
@@ -122,7 +152,7 @@ function ContactForm({ variant, title }) {
                   id="tel"
                   placeholder="ტელეფონის ნომერი"
                   value={formData.tel}
-                  onChange={handleInput}
+                  onChange={(e) => handleInput(e)}
                   required
                   style={inputBase}
                 />
@@ -137,7 +167,7 @@ function ContactForm({ variant, title }) {
                   id="email"
                   placeholder="თქვენი ელ-ფოსტა"
                   value={formData.email}
-                  onChange={handleInput}
+                  onChange={(e) => handleInput(e)}
                   required
                   style={inputBase}
                 />
@@ -157,7 +187,14 @@ function ContactForm({ variant, title }) {
                   fontSize: "20px",
                 }}
               >
-                <input type="radio" id="yes" name="receiveInfo" />
+                <input
+                  type="radio"
+                  id="yes"
+                  name="receiveInfo"
+                  value="true"
+                  onChange={(e) => handleInput(e)}
+                  checked={formData.receiveInfo === true}
+                />
                 <label htmlFor="yes">კი</label>
               </div>
               {/* radio option container 2 */}
@@ -168,7 +205,14 @@ function ContactForm({ variant, title }) {
                   fontSize: "20px",
                 }}
               >
-                <input type="radio" id="no" name="receiveInfo" />
+                <input
+                  type="radio"
+                  id="no"
+                  name="receiveInfo"
+                  value="false"
+                  onChange={(e) => handleInput(e)}
+                  checked={formData.receiveInfo === false}
+                />
                 <label htmlFor="no">არა</label>
               </div>
             </div>
@@ -186,7 +230,7 @@ function ContactForm({ variant, title }) {
                 value={formData.note}
                 required
                 rows={10}
-                onChange={handleInput}
+                onChange={(e) => handleInput(e)}
                 style={inputBase}
               ></textarea>
             </div>
