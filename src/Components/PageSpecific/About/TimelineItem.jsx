@@ -2,7 +2,7 @@ import React from "react";
 import { useDesign } from "../../../context/DesignProvider";
 
 function TimelineItem({ principlesData }) {
-  const { colors, borderRadius } = useDesign();
+  const { colors, borderRadius, fontSizes } = useDesign();
   const timelineContainerBase = {
     display: "flex",
     flexDirection: "column",
@@ -21,10 +21,12 @@ function TimelineItem({ principlesData }) {
             backgroundColor: "transparent",
             width: "80px",
             height: "80px",
-            border:
-              idx !== principlesData.length - 1 &&
-              `3px solid ${colors.primaryBlue}`,
+            border: `3px solid ${colors.primaryBlue}`,
             borderRadius: borderRadius.btnCircle,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            fontSize: fontSizes.heading3
           }}
         >
           {idx + 1}
