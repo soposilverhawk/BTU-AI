@@ -71,7 +71,7 @@ function ContactForm({ variant, title }) {
       </h3>
       <form
         action=""
-        style={{ display: "flex", flexDirection: "column", gap: "40px" }}
+        style={{ display: "flex", flexDirection: "column", gap: "40px", height: "100%", justifyContent: "space-between" }}
       >
         {/* first row inputs */}
         <div style={rowBase}>
@@ -172,15 +172,31 @@ function ContactForm({ variant, title }) {
                 <label htmlFor="no">არა</label>
               </div>
             </div>
-            <div style={{ margin: "0 auto", width: "15%" }}>
-              <Button variant="formSubmit" width="100%">
-                გაგზავნა
-              </Button>
-            </div>
           </>
         ) : (
-          <div></div>
+          <div>
+            <div style={{ ...inputContainerBase, width: "auto" }}>
+              <label htmlFor="note">
+                ტექსტი <span style={requiredBase}>*</span>
+              </label>
+              <textarea
+                name="note"
+                id="note"
+                placeholder="ტექსტი..."
+                value={formData.note}
+                required
+                rows={10}
+                onChange={handleInput}
+                style={inputBase}
+              ></textarea>
+            </div>
+          </div>
         )}
+        <div style={{ margin: "0 auto", width: "15%" }}>
+          <Button variant="formSubmit" width="100%">
+            გაგზავნა
+          </Button>
+        </div>
       </form>
     </div>
   );
