@@ -8,7 +8,6 @@ import Contact from "../pages/Contact/Contact";
 import FAQ from "../pages/FAQ/FAQ";
 import Blog from "../pages/Blog/Blog";
 
-
 function AppRoutes() {
   return (
     <Routes>
@@ -16,9 +15,9 @@ function AppRoutes() {
       <Route path={ROUTES.ABOUT} element={<About />} />
       <Route path={ROUTES.BAPROGRAMMES} element={<BAProgrammes />} />
       <Route path={ROUTES.SUCCESSSTORIES} element={<SuccessStories />} />
-      <Route path={ROUTES.CONTACT} element={<Contact />}/>
-      <Route path={ROUTES.FAQ} element={<FAQ />}/>
-      <Route path={ROUTES.BLOG} element={<Blog />}/>
+      <Route path={ROUTES.CONTACT} element={<Contact />} />
+      <Route path={ROUTES.FAQ} element={<FAQ />} />
+      <Route path={ROUTES.BLOG} element={<Blog />} />
     </Routes>
   );
 }
