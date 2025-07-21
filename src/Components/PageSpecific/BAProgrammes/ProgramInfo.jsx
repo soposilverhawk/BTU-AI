@@ -5,7 +5,16 @@ import { Typography } from "@mui/material";
 
 function BAProgrammes() {
   return (
-    <section style={{ width: "100%", marginTop: "8rem" }}>
+    <section
+      style={{
+        width: "100%",
+        marginTop: "8rem",
+        height: "1240px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+      }}
+    >
       <article>
         <SectionHeading
           title={AIProgram.programOverview.degree}
@@ -22,7 +31,14 @@ function BAProgrammes() {
           {AIProgram.programOverview.generalInfo}
         </Typography>
       </article>
-      <article>
+      <article
+        style={{
+          height: "70%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
         {/* program goals container */}
         <div>
           <SectionHeading
@@ -45,14 +61,28 @@ function BAProgrammes() {
           <Typography variant="body1">{AIProgram.objectives}</Typography>
         </div>
         {/* program additional info container */}
-        <div>
-          <Typography variant="body1">{AIProgram.additionalInfo.description}</Typography>
-          <ul style={{listStyleType: "disc"}}>
-            {AIProgram.additionalInfo.internationalPrograms.map(({id, name, link}) => (
-              <li key={id} style={link && {fontWeight: "bold"}}>
-                {link ? <a href={link}>{name}</a> : name}
-              </li>
-            ))}
+        <div
+          style={{
+            height: "40%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-evenly",
+          }}
+        >
+          <Typography variant="body1">
+            {AIProgram.additionalInfo.description}
+          </Typography>
+          <ul style={{ listStyleType: "disc" }}>
+            {AIProgram.additionalInfo.internationalPrograms.map(
+              ({ id, name, link }) => (
+                <li
+                  key={id}
+                  style={link && { fontWeight: "bold", marginBottom: "0.5rem" }}
+                >
+                  {link ? <a href={link}>{name}</a> : name}
+                </li>
+              )
+            )}
           </ul>
         </div>
       </article>
