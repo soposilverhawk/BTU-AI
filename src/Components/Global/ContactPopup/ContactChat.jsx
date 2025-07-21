@@ -29,7 +29,7 @@ function ContactChat({
           justifyContent: "space-between",
         }}
       >
-        <h4>ჩვენი წარმომადგენელი დაგიკავშირდება მალე</h4>
+        <h4>BTU მხარდაჭერა</h4>
         <CloseButton disableRipple disableFocusRipple onClick={closeChat}>
           <CancelIcon />
         </CloseButton>
@@ -98,6 +98,7 @@ function ContactChat({
           onChange={(e) => setUserMsgInput(e.target.value)}
         />
         <ChatButton variant="chatSubmit" onClick={sendUserMsg} />
+        {/* add funtionality to submit a message on enter press */}
       </div>
     </>
   );
