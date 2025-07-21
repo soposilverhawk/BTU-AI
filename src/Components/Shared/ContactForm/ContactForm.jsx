@@ -143,19 +143,31 @@ function ContactForm({ variant, title }) {
                 />
               </div>
             </div>
-            <Typography variant="body1" sx={{fontSize: "20px"}}>
+            <Typography variant="body1" sx={{ fontSize: "20px" }}>
               მსურს მივიღო ინფორმაცია BTU-ს სასწავლო პროგრამებისა და დაგეგმილი
               სამომავლო აქტივობების/ღონისძიებების შესახებ ელექტრონული ფოსტის,
               სატელეფონო კომუნიკაციის ან/და SMS-ის საშუალებით. 
             </Typography>
             <div style={{ display: "flex", gap: "1rem" }}>
               {/* radio option container 1 */}
-              <div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  fontSize: "20px",
+                }}
+              >
                 <input type="radio" id="yes" name="receiveInfo" />
                 <label htmlFor="yes">კი</label>
               </div>
               {/* radio option container 2 */}
-              <div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  fontSize: "20px",
+                }}
+              >
                 <input type="radio" id="no" name="receiveInfo" />
                 <label htmlFor="no">არა</label>
               </div>
