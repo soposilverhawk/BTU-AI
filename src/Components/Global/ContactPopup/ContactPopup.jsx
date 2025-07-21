@@ -4,6 +4,7 @@ import ChatButton from "../../Shared/Button/Button";
 import CancelIcon from "@mui/icons-material/Cancel";
 import { Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import ContactChat from "./ContactChat";
 
 function ContactPopup() {
   const [emailInput, setEmailInput] = useState("");
@@ -21,10 +22,12 @@ function ContactPopup() {
 
   const closeChat = () => {
     if (isChatOpen) {
-      const confirmation = confirm("You're leaving the chat, would you like to proceed?")
+      const confirmation = confirm(
+        "You're leaving the chat, would you like to proceed?"
+      );
       if (confirmation) {
         setIsChatOpen(false);
-        setUserMsgs([])
+        setUserMsgs([]);
       }
     }
   };
@@ -32,20 +35,15 @@ function ContactPopup() {
   const sendUserMsg = () => {
     if (!userMsgInput.trim()) return;
 
-    setUserMsgs((prevMessages) => [...prevMessages, userMsgInput])
+    setUserMsgs((prevMessages) => [...prevMessages, userMsgInput]);
     setUserMsgInput("");
   };
-
-  const CloseButton = styled(Button)(({ theme }) => ({
-    color: "#fff",
-    backgroundColor: "transparent",
-  }));
 
   const baseStyles = {
     height: "382px",
     maxWidth: "539px",
     width: "100%",
-    borderTopLeftRadius: "10%",
+    borderTopLeftRadius: "5%",
     backgroundColor: colors.primaryPink,
     position: "absolute",
     right: 0,
@@ -100,87 +98,13 @@ function ContactPopup() {
           <ChatButton variant="chatSubmit" />
         </form>
       ) : (
-        <>
-          <div
-            style={{
-              width: "90%",
-              paddingLeft: "2rem",
-              display: "flex",
-              justifyContent: "space-between",
-            }}
-          >
-            <h4>ჩვენი წარმომადგენელი დაგიკავშირდება მალე</h4>
-            <CloseButton disableRipple disableFocusRipple onClick={closeChat}>
-              <CancelIcon />
-            </CloseButton>
-          </div>
-          <div
-            style={{
-              width: "80%",
-              height: "70%",
-              backgroundColor: "#fff",
-              borderTopLeftRadius: "1rem",
-              padding: "1rem",
-              overflowY: "auto",
-              display: "flex",
-              flexDirection: "column",
-              gap: "0.5rem",
-              margin: "0 auto",
-            }}
-          >
-            <div
-              style={{
-                alignSelf: "flex-start",
-                background: colors.secondaryGray,
-                padding: "0.5rem 1rem",
-                borderRadius: "1rem",
-              }}
-            >
-              გამარჯობა, რითი შეგვიძლია დაგეხმაროთ?
-            </div>
-            {userMsgs && (
-              userMsgs.map((msg, idx) => (
-                <div
-                key={idx}
-                style={{
-                  alignSelf: "flex-end",
-                  background: colors.primaryPink,
-                  padding: "0.5rem 1rem",
-                  borderRadius: "1rem",
-                  color: "#fff",
-                  marginTop: "1rem",
-                }}
-              >
-                {msg}
-              </div>
-              ))
-            )}
-          </div>
-          {/* user-chat-box */}
-          <div
-            style={{
-              width: "80%",
-              margin: "0 auto",
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <input
-              type="text"
-              placeholder="Aa"
-              style={{
-                padding: "0.5rem 1rem",
-                width: "90%",
-                border: "none",
-                borderRadius: borderRadius.btnRect,
-              }}
-              name="user-msg"
-              value={userMsgInput}
-              onChange={(e) => setUserMsgInput(e.target.value)}
-            />
-            <ChatButton variant="chatSubmit" onClick={sendUserMsg} />
-          </div>
-        </>
+        <ContactChat
+          userMsgs={userMsgs}
+          closeChat={closeChat}
+          sendUserMsg={sendUserMsg}
+          setUserMsgInput={setUserMsgInput}
+          userMsgInput={userMsgInput}
+        />
       )}
     </div>
   );
