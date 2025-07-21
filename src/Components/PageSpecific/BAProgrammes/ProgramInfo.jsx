@@ -9,7 +9,7 @@ function BAProgrammes() {
       style={{
         width: "100%",
         marginTop: "8rem",
-        height: "1240px",
+        height: "1500px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -33,7 +33,7 @@ function BAProgrammes() {
       </article>
       <article
         style={{
-          height: "70%",
+          height: "50%",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
@@ -86,16 +86,25 @@ function BAProgrammes() {
           </ul>
         </div>
       </article>
-      <article>
+      <article style={{marginTop: "3rem"}}>
         <SectionHeading
           title={null}
           isHighlited={true}
           highLightTxt="დეტალური ინფორმაცია საგნების შესახებ."
           borderActive={false}
         />
-        <ul style={{listStyleType: "disc", fontWeight: "bold", paddingLeft: "1rem", marginTop: "2rem"}}>
+        <ul
+          style={{
+            listStyleType: "disc",
+            fontWeight: "bold",
+            paddingLeft: "1rem",
+            marginTop: "2rem",
+          }}
+        >
           <li>
-            <a href="https://drive.google.com/file/d/1w1sFWQ8Vk0fajmO1VDgMH5nL2cqscnCE/view">პროგრამა</a>
+            <a href="https://drive.google.com/file/d/1w1sFWQ8Vk0fajmO1VDgMH5nL2cqscnCE/view">
+              პროგრამა
+            </a>
           </li>
         </ul>
       </article>
