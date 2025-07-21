@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import HeroStatic from "../../Components/Shared/Hero/HeroStatic/HeroStatic";
 
 function Contact() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <HeroStatic heroTitle="კონტაქტი" />;
 }
 
-export default Contact
+export default Contact;

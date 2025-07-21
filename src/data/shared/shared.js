@@ -30,7 +30,7 @@ export const appNavItems = [
   },
   {
     id: uuid(),
-    page: "ჩვენს შესახებ",
+    page: "FAQ",
     path: ROUTES.FAQ
   },
   {

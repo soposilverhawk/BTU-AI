@@ -1,10 +1,9 @@
 import React from 'react'
+import HeroStatic from '../../Components/Shared/Hero/HeroStatic/HeroStatic'
 
 function SuccessStories() {
   return (
-    <div>
-      
-    </div>
+    <HeroStatic heroTitle="წარმატების ისტორიები"/>
   )
 }
 

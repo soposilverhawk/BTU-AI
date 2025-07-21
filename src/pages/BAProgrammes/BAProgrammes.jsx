@@ -1,10 +1,9 @@
 import React from 'react'
+import HeroStatic from '../../Components/Shared/Hero/HeroStatic/HeroStatic'
 
 function BAProgrammes() {
   return (
-    <div>
-      
-    </div>
+    <HeroStatic heroTitle="AI საბაკალავრო პროგრამა" />
   )
 }
 

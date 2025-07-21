@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import HeroStatic from "../../Components/Shared/Hero/HeroStatic/HeroStatic";
 
 function Blog() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <HeroStatic heroTitle="ბლოგი" />;
 }
 
-export default Blog
+export default Blog;

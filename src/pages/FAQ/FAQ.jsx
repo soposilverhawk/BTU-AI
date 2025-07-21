@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import HeroStatic from "../../Components/Shared/Hero/HeroStatic/HeroStatic";
 
 function FAQ() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <HeroStatic heroTitle="ხშირად დასმული კითხვები" />;
 }
 
-export default FAQ
+export default FAQ;
