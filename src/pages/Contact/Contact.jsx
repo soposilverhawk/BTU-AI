@@ -25,7 +25,6 @@ function Contact() {
               marginTop: "9rem",
             }}
           >
-            {/* section heading container */}
            <HeadingWithSocials />
             {/* section information container */}
             <div>
