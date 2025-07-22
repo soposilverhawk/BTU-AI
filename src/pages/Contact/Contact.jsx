@@ -25,7 +25,7 @@ function Contact() {
               marginTop: "9rem",
             }}
           >
-           <HeadingWithSocials />
+            <HeadingWithSocials highLightTxt="საკონტაქტო ინფორმაცია" />
             {/* section information container */}
             <div>
               <h3 style={{ color: colors.primaryBlue, marginBottom: "2rem" }}>
@@ -57,7 +57,14 @@ function Contact() {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </section>
-          <section style={{ marginTop: "14rem", display: "flex", flexDirection: "column" ,gap: "4rem" }}>
+          <section
+            style={{
+              marginTop: "14rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "4rem",
+            }}
+          >
             <SectionHeading
               title=""
               isHighlited={true}
