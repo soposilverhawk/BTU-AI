@@ -10,11 +10,14 @@ function Socials({ variant }) {
     gap: spacing.xs,
   };
   const variantStyles = {
-    padding: "0.5rem",
+    padding: "0.2rem 0.5rem",
     backgroundColor: colors.primaryPink,
+    position: "absolute",
+    right: 0,
+    top: 0,
   };
   const appliedStyles = variant === "innerContent" && variantStyles;
-  
+
   return (
     <ul style={{ ...baseStyles, ...appliedStyles }}>
       {socialItems.map(({ name, id, icon, smLink }) => (

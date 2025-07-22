@@ -6,7 +6,7 @@ function SectionHeading({
   isHighlited = false,
   highLightTxt = "",
   borderActive = true,
-  width="60%"
+  width = "60%",
 }) {
   const { colors, fontSizes, spacing } = useDesign();
   return (
@@ -14,7 +14,7 @@ function SectionHeading({
       style={{
         fontSize: fontSizes.heading2,
         fotnWeight: "bold",
-        borderBottom: borderActive && `1px solid ${colors.primaryPink}`,
+        borderBottom: borderActive && `4px solid ${colors.primaryPink}`,
         paddingBottom: spacing.md,
         width: width,
       }}
