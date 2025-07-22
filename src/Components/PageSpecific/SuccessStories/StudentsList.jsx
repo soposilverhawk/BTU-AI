@@ -3,7 +3,7 @@ import { studentAchievements } from "../../../data/successStories/success";
 
 function StudentsList() {
   return (
-    <ul>
+    <ul style={{listStyleType: "disc"}}>
       {studentAchievements.map(({ id, student, position, company, linkedIn }) => (
         <li key={id}>
           <a href={linkedIn} target="_blank">
