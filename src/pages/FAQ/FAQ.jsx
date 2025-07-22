@@ -2,10 +2,12 @@ import React from "react";
 import HeroStatic from "../../Components/Shared/Hero/HeroStatic/HeroStatic";
 import LayoutWrapper from "../../Components/Global/LayoutWrapper/LayoutWrapper";
 import { FAQNavigation } from "../../data/shared/shared";
-import { Outlet, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { NavButton } from "../../Components/Global/Header/HeaderMUIRestyle";
 import HeadingWithSocials from "../../Components/Shared/HeadingWithSocials/HeadingWithSocials";
 import { useDesign } from "../../context/DesignProvider";
+import SectionHeading from "../../Components/PageSpecific/Home/shared/SectionHeading";
+import FAQLists from "../../Components/PageSpecific/FAQ/FAQLists";
 
 function FAQ() {
   const { fontSizes, colors } = useDesign();
@@ -17,7 +19,7 @@ function FAQ() {
         <div style={{ width: "100%", marginTop: "8rem" }}>
           <section>
             <HeadingWithSocials highLightTxt="FAQ" />
-            <ul
+            {/* <ul
               style={{
                 display: "flex",
                 flexDirection: "column",
@@ -41,7 +43,16 @@ function FAQ() {
                   {page}
                 </NavButton>
               ))}
-            </ul>
+            </ul> */}
+            <FAQLists data={FAQNavigation} variant="subNavigation"/>
+          </section>
+          <section style={{marginTop: "10rem"}}>
+            <SectionHeading
+              title=""
+              isHighlited={true}
+              highLightTxt="გაიგე სწრაფად"
+              width="100%"
+            />
           </section>
         </div>
       </LayoutWrapper>
