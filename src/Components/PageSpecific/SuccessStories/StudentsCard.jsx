@@ -1,10 +1,9 @@
 import React from "react";
-import { studentCards } from "../../../data/successStories/success";
 import { useDesign } from "../../../context/DesignProvider";
 
-function StudentsCard() {
-  const { colors, borderRadius } = useDesign();
-  return studentCards.slice(0, 4).map(({ id, student, studentImg }) => (
+function StudentsCard({studentsData, rangeEndIdx}) {
+  const { colors } = useDesign();
+  return studentsData.slice(0, rangeEndIdx).map(({ id, student, studentImg }) => (
     // card container
     <div
       key={id}

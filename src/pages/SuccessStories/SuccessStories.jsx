@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroStatic from "../../Components/Shared/Hero/HeroStatic/HeroStatic";
 import LayoutWrapper from "../../Components/Global/LayoutWrapper/LayoutWrapper";
 import "../../Components/PageSpecific/SuccessStories/StudentsList";
@@ -7,9 +7,17 @@ import StudentsCard from "../../Components/PageSpecific/SuccessStories/StudentsC
 import SectionHeading from "../../Components/PageSpecific/Home/shared/SectionHeading";
 import Button from "../../Components/Shared/Button/Button";
 import { useDesign } from "../../context/DesignProvider";
+import { studentCards } from "../../data/successStories/success";
 
 function SuccessStories() {
   const { colors } = useDesign();
+  const [endIdx, setEndIdx] = useState(4);
+  let step = 2;
+  const handleClick = () => {
+    if(endIdx !== studentCards.length) {
+      setEndIdx((prev) => prev + step)
+    }
+  }
   return (
     <>
       <HeroStatic heroTitle="წარმატების ისტორიები" />
@@ -47,11 +55,11 @@ function SuccessStories() {
                 gap: "20px",
               }}
             >
-              <StudentsCard />
+              <StudentsCard studentsData={studentCards} rangeEndIdx={endIdx} />
             </div>
-            <Button variant="button">
+            <Button variant="button" onClick={handleClick}>
               <span style={{ color: colors.primaryPink }}>
-                გაიცანი ყველა წარმატებული სტუდენტი
+                გაიცანი ყველა წარმატებული სტუდენტი...
               </span>
             </Button>
           </section>
