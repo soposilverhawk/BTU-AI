@@ -36,7 +36,7 @@ function FAQLists({ data, variant = "subNavigation" }) {
             disableFocusRipple
             disableRipple
             onClick={() => navigate(path)}
-            sx={{ color: colors.primaryBlue }}
+            sx={{ color: colors.primaryBlue, fontSize: fontSizes.heading3 }}
           >
             {page}
           </NavButton>
