@@ -9,7 +9,7 @@ import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
 import Socials from "../../Shared/Socials/Socials";
 
 export default function Header() {
-  const { colors, spacing } = useDesign();
+  const { colors } = useDesign();
   const navigate = useNavigate();
 
   return (
