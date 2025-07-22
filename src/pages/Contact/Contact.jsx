@@ -6,6 +6,7 @@ import Socials from "../../Components/Shared/Socials/Socials";
 import { useDesign } from "../../context/DesignProvider";
 import ContactEntity from "../../Components/PageSpecific/Contact/ContactEntity";
 import ContactForm from "../../Components/Shared/ContactForm/ContactForm";
+import HeadingWithSocials from "../../Components/Shared/HeadingWithSocials/HeadingWithSocials";
 
 function Contact() {
   const { colors } = useDesign();
@@ -25,19 +26,7 @@ function Contact() {
             }}
           >
             {/* section heading container */}
-            <div
-              style={{
-                position: "relative",
-              }}
-            >
-              <SectionHeading
-                title=""
-                isHighlited={true}
-                highLightTxt="საკონტაქტი ინფორმაცია"
-                width="100%"
-              />
-              <Socials variant="innerContent" />
-            </div>
+           <HeadingWithSocials />
             {/* section information container */}
             <div>
               <h3 style={{ color: colors.primaryBlue, marginBottom: "2rem" }}>
