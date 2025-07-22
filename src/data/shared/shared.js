@@ -31,12 +31,30 @@ export const appNavItems = [
   {
     id: uuid(),
     page: "FAQ",
-    path: ROUTES.FAQ,
+    path: ROUTES.FAQ.MAIN,
   },
   {
     id: uuid(),
     page: "ბლოგი",
     path: ROUTES.BLOG,
+  },
+];
+
+export const FAQNavigation = [
+  {
+    id: uuid(),
+    page: "AI ლააბორატორიები",
+    path: ROUTES.FAQ.FAQ_AI_LABS,
+  },
+  {
+    id: uuid(),
+    page: "კვლევები",
+    path: ROUTES.FAQ.FAQ_AI_STUDIES,
+  },
+  {
+    id: uuid(),
+    page: "AI წიგნიერების სერია",
+    path: ROUTES.FAQ.FAQ_AI_KNOWLEDGE,
   },
 ];
 export const socialItems = [
