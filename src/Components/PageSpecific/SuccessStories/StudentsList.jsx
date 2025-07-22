@@ -14,7 +14,7 @@ function StudentsList() {
       />
       <ul style={{listStyleType: "disc", marginTop: "5rem"}}>
       {studentAchievements.map(({ id, student, position, company, linkedIn }) => (
-        <li key={id}>
+        <li key={id} style={{marginTop: "0.5rem"}}>
           <a href={linkedIn} target="_blank">
             {student} -
             <strong style={{ fontWeight: "bold" }}>
