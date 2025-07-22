@@ -1,6 +1,8 @@
 import React from "react";
 import { useDesign } from "../../../context/DesignProvider";
 import logo from "../../../assets/shared/logo/BTU-logo-secondary.png";
+import SuccessCardContent from "./Variants/SuccessCardContent";
+import ProgrammesCardContent from "./Variants/ProgrammesCardContent";
 
 function InfoCard({ variant = "", cardImg, cardTxt, bgColor }) {
   const { spacing } = useDesign();
@@ -25,54 +27,47 @@ function InfoCard({ variant = "", cardImg, cardTxt, bgColor }) {
     paddingTop: spacing.sm,
   };
 
+  const studentVariantStyles = {
+    maxWidth: "556px",
+    width: "100%",
+    height: "250px",
+    display: "flex",
+  };
+
+  const FAQCardSmallVariantStyles = {};
+
+  const FAQCardBigVariantStyles = {};
+
+  const appliedStyles =
+    variant === "success"
+      ? successVariantStyles
+      : variant === "student"
+      ? studentVariantStyles
+      : variant === "FAQCardSmall"
+      ? FAQCardSmallVariantStyles
+      : variant === "FAQCardBig"
+      ? FAQCardBigVariantStyles
+      : programesVariantStyles;
+
+  const renderVariantContent = () => {
+    switch (variant) {
+      case "success":
+        return <SuccessCardContent bgColor={bgColor} cardTxt={cardTxt}/>;
+      case "programes":
+        return <ProgrammesCardContent cardImg={cardImg} cardTxt={cardTxt} />;
+      default:
+        return null;
+    }
+  };
+
   return (
     <div
       style={{
         ...baseStyles,
-        ...(variant === "success"
-          ? successVariantStyles
-          : programesVariantStyles),
+        ...appliedStyles,
       }}
     >
-      {variant === "success" ? (
-        <>
-          <div
-            style={{
-              zIndex: 9000,
-              display: "flex",
-              flexDirection: "column",
-              gap: "2rem",
-              alignItems: "center",
-            }}
-          >
-            <img src={logo} alt="BTU logo" />
-            <h3
-              style={{
-                backgroundColor: bgColor,
-                padding: spacing.sm,
-              }}
-            >
-              {cardTxt}
-            </h3>
-          </div>
-          {/* card overlay */}
-          <div
-            style={{
-              backgroundColor: "#0000008C",
-              position: "absolute",
-              left: 0,
-              top: 0,
-              width: "100%",
-              height: "100%",
-            }}
-          ></div>
-        </>
-      ) : (
-        <>
-          <img src={cardImg} alt={cardTxt} />
-          <p style={{ marginTop: "2rem" }}>{cardTxt}</p>
-        </>
-      )}
+      {renderVariantContent()}
     </div>
   );
 }
