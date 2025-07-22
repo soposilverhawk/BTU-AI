@@ -7,62 +7,52 @@ import studentImg4 from "../../assets/successStories/cards/salome-mosiava.jpg";
 export const studentCards = [
   {
     id: uuid(),
-    projectName: "პროგრამა - WOMEN IN AI",
-    student: "წარმატებული სტუდენტი სალი გოგიშვილი",
+    student: "სალი გოგიშვილი",
     studentImg: studentImg1,
   },
   {
     id: uuid(),
-    projectName: "პროგრამა - WOMEN IN AI",
-    student: "წარმატებული სტუდენტი ელენე ცქიტიშვილი",
+    student: "ელენე ცქიტიშვილი",
     studentImg: studentImg2,
   },
   {
     id: uuid(),
-    projectName: "პროგრამა - WOMEN IN AI",
-    student: "წარმატებული სტუდენტი ნენსი ნენსი",
+    student: "ნენსი ნენსი",
     studentImg: studentImg3,
   },
   {
     id: uuid(),
-    projectName: "პროგრამა - WOMEN IN AI",
-    student: "წარმატებული სტუდენტი სალომე მოსიავა",
+    student: "სალომე მოსიავა",
     studentImg: studentImg4,
   },
   {
     id: uuid(),
-    projectName: "პროგრამა - WOMEN IN AI",
-    student: "წარმატებული სტუდენტი ნენსი ნენსი",
+    student: "ნენსი ნენსი",
     studentImg: studentImg3,
   },
   {
     id: uuid(),
-    projectName: "პროგრამა - WOMEN IN AI",
-    student: "წარმატებული სტუდენტი სალომე მოსიავა",
+    student: "სალომე მოსიავა",
     studentImg: studentImg4,
   },
   {
     id: uuid(),
-    projectName: "პროგრამა - WOMEN IN AI",
-    student: "წარმატებული სტუდენტი ნენსი ნენსი",
+    student: "ნენსი ნენსი",
     studentImg: studentImg3,
   },
   {
     id: uuid(),
-    projectName: "პროგრამა - WOMEN IN AI",
-    student: "წარმატებული სტუდენტი სალომე მოსიავა",
+    student: "სალომე მოსიავა",
     studentImg: studentImg4,
   },
   {
     id: uuid(),
-    projectName: "პროგრამა - WOMEN IN AI",
-    student: "წარმატებული სტუდენტი ნენსი ნენსი",
+    student: "ნენსი ნენსი",
     studentImg: studentImg3,
   },
   {
     id: uuid(),
-    projectName: "პროგრამა - WOMEN IN AI",
-    student: "წარმატებული სტუდენტი სალომე მოსიავა",
+    student: "სალომე მოსიავა",
     studentImg: studentImg4,
   },
 ];
@@ -153,8 +143,6 @@ const rawData = `
 თეო ზანგურაშვილი – Chief Executive Officer| Buildy | https://www.linkedin.com/in/teo-zangurashvili/
 ლერი მდინარაძე – Invited Lecturer | MindSchool | https://www.linkedin.com/in/lerimdinaradze/`;
 
-
-
 class StudentAchievement {
   constructor(student, position, company, linkedIn) {
     this.id = uuid();
@@ -166,8 +154,7 @@ class StudentAchievement {
 }
 
 // Helper to detect LinkedIn links reliably
-const isLinkedInUrl = (str) =>
-  str?.startsWith("https://www.linkedin.com/in/");
+const isLinkedInUrl = (str) => str?.startsWith("https://www.linkedin.com/in/");
 
 export const studentAchievements = rawData
   .replace(/\u2013|\u2014|\u2012|\u2011|\u2010/g, "-") // normalize dashes
@@ -207,4 +194,3 @@ export const studentAchievements = rawData
     return new StudentAchievement(namePart, position, company, linkedIn);
   })
   .filter(Boolean);
-
