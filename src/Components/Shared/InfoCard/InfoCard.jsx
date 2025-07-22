@@ -4,8 +4,8 @@ import logo from "../../../assets/shared/logo/BTU-logo-secondary.png";
 import SuccessCardContent from "./Variants/SuccessCardContent";
 import ProgrammesCardContent from "./Variants/ProgrammesCardContent";
 
-function InfoCard({ variant = "", cardImg, cardTxt, bgColor }) {
-  const { spacing } = useDesign();
+function InfoCard({ variant = "", cardImg, cardTxt, bgColor, student }) {
+  const { spacing, borderRadius, colors } = useDesign();
 
   // shared styles
   const baseStyles = {
@@ -27,13 +27,6 @@ function InfoCard({ variant = "", cardImg, cardTxt, bgColor }) {
     paddingTop: spacing.sm,
   };
 
-  const studentVariantStyles = {
-    maxWidth: "556px",
-    width: "100%",
-    height: "250px",
-    display: "flex",
-  };
-
   const FAQCardSmallVariantStyles = {};
 
   const FAQCardBigVariantStyles = {};
@@ -41,8 +34,6 @@ function InfoCard({ variant = "", cardImg, cardTxt, bgColor }) {
   const appliedStyles =
     variant === "success"
       ? successVariantStyles
-      : variant === "student"
-      ? studentVariantStyles
       : variant === "FAQCardSmall"
       ? FAQCardSmallVariantStyles
       : variant === "FAQCardBig"
@@ -52,7 +43,7 @@ function InfoCard({ variant = "", cardImg, cardTxt, bgColor }) {
   const renderVariantContent = () => {
     switch (variant) {
       case "success":
-        return <SuccessCardContent bgColor={bgColor} cardTxt={cardTxt}/>;
+        return <SuccessCardContent bgColor={bgColor} cardTxt={cardTxt} />;
       case "programes":
         return <ProgrammesCardContent cardImg={cardImg} cardTxt={cardTxt} />;
       default:

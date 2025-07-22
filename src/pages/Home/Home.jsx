@@ -12,8 +12,8 @@ function Home() {
       <LayoutWrapper>
         <div>
           <BAProgrammeInfo />
-          <InfoCardSection title={"წარმატების ისტორიები"} data={successStoriesCards} variant="success"/>
-          <InfoCardSection title={"ქალების გაძლიერების პროგრამები"} data={programmesCards} variant="programes"/>
+          <InfoCardSection title="წარმატების ისტორიები" data={successStoriesCards} variant="success"/>
+          <InfoCardSection title="ქალების გაძლიერების პროგრამები" data={programmesCards} variant="programes"/>
         </div>
       </LayoutWrapper>
     </>

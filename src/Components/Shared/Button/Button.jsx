@@ -13,7 +13,9 @@ function Button({ children = "", variant = "", onClick, width }) {
     cursor: "pointer",
     gap: spacing.md,
     color: "#fff",
-    width: width ? width : null
+    width: width ? width : null,
+    border: "none",
+    backgroundColor: "transparent"
   };
 
   const buttonType =
