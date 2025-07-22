@@ -2,10 +2,11 @@ import React from "react";
 import { AppBar, Box, Typography } from "@mui/material";
 import logo from "../../../assets/shared/logo/BTU-logo-primary.png";
 import { Link, useNavigate } from "react-router-dom";
-import { socialItems, appNavItems } from "../../../data/shared/shared";
+import { appNavItems } from "../../../data/shared/shared";
 import { useDesign } from "../../../context/DesignProvider";
 import { ToolbarTop, ToolbarBottom, NavButton } from "./HeaderMUIRestyle";
 import LayoutWrapper from "../LayoutWrapper/LayoutWrapper";
+import Socials from "../../Shared/Socials/Socials";
 
 export default function Header() {
   const { colors, spacing } = useDesign();
@@ -30,17 +31,7 @@ export default function Header() {
             <span style={{ color: colors.primaryPink }}>AI</span>
             წიგნიერების გასაძლიერებლად
           </Typography>
-          <ul
-            style={{ display: "flex", alignItems: "center", gap: spacing.xs }}
-          >
-            {socialItems.map(({ name, id, icon, smLink }) => (
-              <li key={id}>
-                <a href={smLink} target="_blank">
-                  <img src={icon} alt={name} />
-                </a>
-              </li>
-            ))}
-          </ul>
+          <Socials variant="header"/>
         </LayoutWrapper>
       </ToolbarTop>
       <ToolbarBottom>

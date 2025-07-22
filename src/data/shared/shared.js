@@ -11,76 +11,77 @@ export const appNavItems = [
   {
     id: uuid(),
     page: "ჩვენს შესახებ",
-    path: ROUTES.ABOUT
+    path: ROUTES.ABOUT,
   },
   {
     id: uuid(),
     page: "AI ბაკალავრის პროგრამა",
-    path: ROUTES.BAPROGRAMMES
+    path: ROUTES.BAPROGRAMMES,
   },
   {
     id: uuid(),
     page: "წარმატებების ისტორიები",
-    path: ROUTES.SUCCESSSTORIES
+    path: ROUTES.SUCCESSSTORIES,
   },
   {
     id: uuid(),
     page: "კონტაქტი",
-    path: ROUTES.CONTACT
+    path: ROUTES.CONTACT,
   },
   {
     id: uuid(),
     page: "FAQ",
-    path: ROUTES.FAQ
+    path: ROUTES.FAQ,
   },
   {
     id: uuid(),
     page: "ბლოგი",
-    path: ROUTES.BLOG
-  }
-]
+    path: ROUTES.BLOG,
+  },
+];
 export const socialItems = [
   {
     id: uuid(),
     name: "Facebook",
     icon: facebookIcon,
-
     smLink: "https://www.facebook.com/BTUGEORGIA",
   },
   {
     id: uuid(),
     name: "LinkedIn",
     icon: linkedInIcon,
-
-    smLink: "https://www.linkedin.com/school/business-and-technology-university-%E2%80%A2-btu/?originalSubdomain=ge"
+    smLink:
+      "https://www.linkedin.com/school/business-and-technology-university-%E2%80%A2-btu/?originalSubdomain=ge",
   },
   {
     id: uuid(),
     name: "Instagram",
     icon: instagramIcon,
-
-    smLink: "https://www.instagram.com/btugeorgia/?hl=en"
+    smLink: "https://www.instagram.com/btugeorgia/?hl=en",
   },
   {
     id: uuid(),
     name: "TikTok",
     icon: tiktokIcon,
-    smLink: "https://www.tiktok.com/@btu.university"
+    smLink: "https://www.tiktok.com/@btu.university",
   },
   {
     id: uuid(),
     name: "YouTube",
     icon: youtubeIcon,
 
-    smLink: "https://www.youtube.com/@btu-businessandtechnologyu6589"
+    smLink: "https://www.youtube.com/@btu-businessandtechnologyu6589",
   },
   {
     id: uuid(),
     name: "Google",
     icon: googleIcon,
 
-    smLink: "https://btu.edu.ge/"
-  }
+    smLink: "https://btu.edu.ge/",
+  },
 ];
 
-export const contactInfo = ["თბილისი 0162, საქართველო ი.ჭავჭავაძის გამზირი N82", "[+995 32] 2 195 015"]
+export const contactInfo = [
+  "თბილისი 0162, საქართველო ი.ჭავჭავაძის გამზირი N82",
+  "[+995 32] 2 195 015",
+];
