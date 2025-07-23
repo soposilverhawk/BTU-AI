@@ -5,7 +5,7 @@ import HeadingWithSocials from "../../../Components/Shared/HeadingWithSocials/He
 import SubPageMainContent from "../../../Components/PageSpecific/FAQ/subPageMainContent/SubPageMainContent";
 import { AIResearches } from "../../../data/FAQ/Q&A";
 
-function AIKnowledge() {
+function AIStudies() {
   return (
      <>
       <HeroStatic heroTitle="AI ლაბორატორიები" />;
@@ -22,4 +22,4 @@ function AIKnowledge() {
   )
 }
 
-export default AIKnowledge;
+export default AIStudies;
