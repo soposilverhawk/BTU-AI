@@ -102,49 +102,49 @@ export const AIResearches = [
   {
     id: uuid(),
     researcher: "ნინო ენუქიძე, მარი დგებუაძე",
-    resaerchLink:
+    researchLink:
       "ხელოვნური ინტელექტის განვითარების ეროვნული სტრატეგიის შემუშავების საჭიროება საქართველოში",
   },
   {
     id: uuid(),
     researcher: "khatuna burkadze",
-    resaerchLink:
+    researchLink:
       "the legal aspects of artificial intelligence based on the eu experience",
   },
   {
     id: uuid(),
     researcher: "maia melikidze",
-    resaerchLink:
+    researchLink:
       "renewable (solar energ), modern situation, economic challenges, and the role of artificial intelligence",
   },
   {
     id: uuid(),
     researcher: "zviad gabisonia",
-    resaerchLink:
+    researchLink:
       "nature of artificial intelligence and the problem of recognising it as subject of law",
   },
   {
     id: uuid(),
     researcher: "btu-ს დოქტორანტის კვლევითი ნაშრომი",
-    resaerchLink:
+    researchLink:
       "ხელოვნური ინტელექტის ეროვნული სტრატეგიის საჭიროებები, შესაძლებლობები და რისკები",
   },
   {
     id: uuid(),
     researcher: "btu-ს დოქტორანტის კვლევითი ნაშრომი",
-    resaerchLink:
+    researchLink:
       "ხელოვნური ინტელექტი განათლების სფეროში - სტრატეგიის აუცილებლობა, შესაძლებლობები და რისკები",
   },
   {
     id: uuid(),
     researcher: "btu-ს დოქტორანტის კვლევითი ნაშრომი",
-    resaerchLink:
+    researchLink:
       "ხელოვნური ინტელექტის ეროვნული სტრატეგიის საჭიროებები, შესაძლებლობები და რისკები",
   },
   {
     id: uuid(),
     researcher: "btu-ს სტუდენტის კვლევითი ნაშრომი",
-    resaerchLink:
+    researchLink:
       "ხელოვნური ინტელექსტის მნიშვნელობა და მექანიზმი ინდუსტრიულ რევოლუციაში",
   },
 ];

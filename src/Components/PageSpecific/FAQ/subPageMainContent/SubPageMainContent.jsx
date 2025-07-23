@@ -38,7 +38,7 @@ function SubPageMainContent({ variant, listData }) {
               ))
             : listData.map(({ id, researcher, researchLink }) => (
                 <li key={id}>
-                  {researcher} - <a href={researchLink} target="_blank"></a>
+                  {researcher} - <a href={researchLink} target="_blank">{researchLink}</a>
                 </li>
               ))}
         </ul>
