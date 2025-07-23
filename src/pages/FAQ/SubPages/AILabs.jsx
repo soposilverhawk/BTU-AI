@@ -14,10 +14,26 @@ function AILabs() {
       <LayoutWrapper>
         <div style={{ width: "100%", marginTop: "8rem" }}>
           <HeadingWithSocials highLightTxt="FAQ / AI ლაბორატორიები" />
-          <section style={{ width: "100%", marginTop: "4rem", display: "flex", justifyContent: "space-between", gap: "10rem"}}>
+          <section
+            style={{
+              width: "100%",
+              marginTop: "4rem",
+              display: "flex",
+              justifyContent: "space-between",
+              gap: "10rem",
+            }}
+          >
             <SubPageMainContent variant="labs" listData={AILabProjects} />
-            <div style={{width: "22%", height: "100%", display: "flex", flexDirection: "column", gap: "10px"}}>
-              <FAQCard variant="FAQSmallCard" data={FAQSmallCardsData}/>
+            <div
+              style={{
+                width: "22%",
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                gap: "10px",
+              }}
+            >
+              <FAQCard variant="FAQSmallCard" data={FAQSmallCardsData} />
             </div>
           </section>
         </div>

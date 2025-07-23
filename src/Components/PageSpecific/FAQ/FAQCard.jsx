@@ -8,17 +8,29 @@ function FAQCard({ variant, data }) {
     boxShadow: "5px 5px 5px gray",
   };
   const variantBigCard = {
-    width: "45%",
+    width: "40%",
+    height: "400px",
+  };
+  const bigCardImg = {
+    width: "100%",
+    height: "100%",
   };
   return data.map(({ id, img, cardTxt, link }) => (
-    <div key={id}>
+    <div
+      key={id}
+      style={variant === "FAQSmallCard" ? variantSmallCard : variantBigCard}
+    >
       {/* card img container */}
-      <div
-        style={variant === "FAQSmallCard" ? variantSmallCard : variantBigCard}
-      >
-        <img src={img} alt={cardTxt} />
-        <p style={{ padding: "1rem" }}>
-          {link !== null ? <a href={link} style={{color: colors.primaryPink}}>{cardTxt}</a> : { cardTxt }}
+      <div style={bigCardImg}>
+        <img src={img} alt={cardTxt} style={bigCardImg} />
+        <p style={{ padding: "1rem", color: colors.primaryPink }}>
+          {link !== null ? (
+            <a href={link} style={{ color: colors.primaryPink }}>
+              {cardTxt}
+            </a>
+          ) : (
+            cardTxt
+          )}
         </p>
       </div>
     </div>
