@@ -11,8 +11,6 @@ function AILabs() {
         <div style={{ width: "100%", marginTop: "8rem" }}>
           <HeadingWithSocials highLightTxt="FAQ / AI ლაბორატორიები" />
           <section>
-            {/* article container */}
-            <article></article>
             {/* cards container */}
             <div></div>
           </section>
