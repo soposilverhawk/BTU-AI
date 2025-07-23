@@ -4,7 +4,7 @@ import InfoCard from "../../../Shared/InfoCard/InfoCard";
 
 function SubPageMainContent({ variant, listData }) {
   return (
-    <article style={{width: "60%"}}>
+    <article style={{ width: "60%" }}>
       {variant === "labs" && (
         <>
           <Typography variant="body1">
@@ -23,14 +23,16 @@ function SubPageMainContent({ variant, listData }) {
         </>
       )}
       {variant !== "knowledge" ? (
-        <ul style={{listStyleType: "disc", marginTop: "0.5rem"}}>
+        <ul style={{ listStyleType: "disc", marginTop: "0.5rem" }}>
           {variant === "labs"
             ? listData.map(({ id, project, projectLink }) => (
-                <li key={id} style={{marginBottom: "0.5rem"}}>
-                  {projectLink && (
+                <li key={id} style={{ marginBottom: "0.5rem" }}>
+                  {projectLink !== null ? (
                     <a href={projectLink} target="_blank">
                       {project}
                     </a>
+                  ) : (
+                    project
                   )}
                 </li>
               ))
