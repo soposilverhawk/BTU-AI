@@ -10,7 +10,6 @@ function SubPageMainContent({ variant, listData }) {
         flexDirection: "column",
         gap: "1rem",
         textAlign: "justify",
-        justifyContent: "space-evenly"
       }}
     >
       {variant === "labs" && (
@@ -34,15 +33,11 @@ function SubPageMainContent({ variant, listData }) {
         <ul
           style={{
             listStyleType: "disc",
-            height: "70%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
           }}
         >
           {variant === "labs"
             ? listData.map(({ id, project, projectLink }) => (
-                <li key={id}>
+                <li key={id} style={{marginBottom: "0.5rem"}}>
                   {projectLink !== null ? (
                     <a href={projectLink} target="_blank">
                       {project}
@@ -53,7 +48,7 @@ function SubPageMainContent({ variant, listData }) {
                 </li>
               ))
             : listData.map(({ id, researcher, researchLink }) => (
-                <li key={id}>
+                <li key={id} style={{marginBottom: "0.5rem"}}>
                   {researcher} -{" "}
                   <a href={researchLink} target="_blank">
                     {researchLink}
