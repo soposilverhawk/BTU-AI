@@ -4,7 +4,15 @@ import InfoCard from "../../../Shared/InfoCard/InfoCard";
 
 function SubPageMainContent({ variant, listData }) {
   return (
-    <article>
+    <article
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "1rem",
+        textAlign: "justify",
+        justifyContent: "space-evenly"
+      }}
+    >
       {variant === "labs" && (
         <>
           <Typography variant="body1">
@@ -23,10 +31,18 @@ function SubPageMainContent({ variant, listData }) {
         </>
       )}
       {variant !== "knowledge" ? (
-        <ul style={{ listStyleType: "disc", marginTop: "0.5rem" }}>
+        <ul
+          style={{
+            listStyleType: "disc",
+            height: "70%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+          }}
+        >
           {variant === "labs"
             ? listData.map(({ id, project, projectLink }) => (
-                <li key={id} style={{ marginBottom: "0.5rem" }}>
+                <li key={id}>
                   {projectLink !== null ? (
                     <a href={projectLink} target="_blank">
                       {project}
@@ -38,7 +54,10 @@ function SubPageMainContent({ variant, listData }) {
               ))
             : listData.map(({ id, researcher, researchLink }) => (
                 <li key={id}>
-                  {researcher} - <a href={researchLink} target="_blank">{researchLink}</a>
+                  {researcher} -{" "}
+                  <a href={researchLink} target="_blank">
+                    {researchLink}
+                  </a>
                 </li>
               ))}
         </ul>
