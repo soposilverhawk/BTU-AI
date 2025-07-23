@@ -5,6 +5,12 @@ import instagramIcon from "../../assets/shared/socials/btu-instagram-icon.png";
 import tiktokIcon from "../../assets/shared/socials/btu-tiktok-icon.png";
 import youtubeIcon from "../../assets/shared/socials/btu-youtube-icon.png";
 import googleIcon from "../../assets/shared/socials/btu-google-icon.png";
+import FAQCardBig1 from "../../assets/shared/cards/FAQ-card-big-1.png";
+import FAQCardBig2 from "../../assets/shared/cards/FAQ-card-big-2.png";
+import FAQCardBig3 from "../../assets/shared/cards/FAQ-card-big-3.png";
+import FAQCardSmall1 from "../../assets/shared/cards/FAQ-card-small-1.jpg";
+import FAQCardSmall2 from "../../assets/shared/cards/FAQ-card-small-2.png";
+import FAQCardSmall3 from "../../assets/shared/cards/FAQ-card-small-3.jpg";
 import ROUTES from "../../routes/Routes";
 
 export const appNavItems = [
@@ -102,4 +108,51 @@ export const socialItems = [
 export const contactInfo = [
   "თბილისი 0162, საქართველო ი.ჭავჭავაძის გამზირი N82",
   "[+995 32] 2 195 015",
+];
+
+export const FAQSmallCardsData = [
+  {
+    id: uuid(),
+    img: FAQCardSmall1,
+    cardTxt: "ტრენინგები და ვორქშოფები ხელოვნური ინტელექტის მიმართულებით",
+    link: "https://btu.edu.ge/treningebi-da-vorqshophebi-khelovnuri-inteleqtis-mimarthulebith/",
+  },
+  {
+    id: uuid(),
+    img: FAQCardSmall2,
+    cardTxt: null,
+  },
+  {
+    id: uuid(),
+    img: FAQCardSmall3,
+    cardTxt: "როგორ გამოვიყენო ხელოვნური ინტელექტი-ტრენინგი btu-ში!",
+    link: "https://btu.edu.ge/rogor-gamoviqheno-khelovnuri-inteleqti-ghia-treningi-qhvela-msurvelisthvis-btu-shi/",
+  },
+];
+
+export const FAQBigCardsData = [
+  {
+    id: uuid(),
+    img: FAQCardBig1,
+    cardTxt: "AI მომხმარებელთა ჩართულობისთვის",
+    link: "https://chrome-extension//kdpelmjpfafjppnhbloffcjpeomlnpah/https://btu.edu.ge/wp-content/uploads/2023/03/AI-MArketing-book-Geo-.pdf",
+  },
+  {
+    id: uuid(),
+    img: FAQCardBig2,
+    cardTxt: "USE OF AI IN BUSINESS",
+    link: null,
+  },
+  {
+    id: uuid(),
+    img: FAQCardBig3,
+    cardTxt: "AI IN EDUCATION",
+    link: "https://chrome-extension//kdpelmjpfafjppnhbloffcjpeomlnpah/https://btu.edu.ge/wp-content/uploads/2023/03/AI-in-Education.docx.pdf",
+  },
+  {
+    id: uuid(),
+    img: FAQCardBig3,
+    cardTxt: "AI IN EDUCATION",
+    link: "https://chrome-extension//kdpelmjpfafjppnhbloffcjpeomlnpah/https://btu.edu.ge/wp-content/uploads/2023/03/AI-in-Education.docx.pdf",
+  },
 ];
