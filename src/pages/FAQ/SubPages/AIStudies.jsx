@@ -12,7 +12,7 @@ function AIKnowledge() {
       <LayoutWrapper>
         <div style={{ width: "100%", marginTop: "8rem" }}>
           <HeadingWithSocials highLightTxt="FAQ / AI კვლევები" />
-          <section style={{ marginTop: "4rem" }}>
+          <section style={{ marginTop: "4rem", height: "840px" }}>
             <SubPageMainContent variant="research" listData={AIResearches} />
             <div></div>
           </section>

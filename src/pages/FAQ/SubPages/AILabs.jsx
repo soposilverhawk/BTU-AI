@@ -12,7 +12,7 @@ function AILabs() {
       <LayoutWrapper>
         <div style={{ width: "100%", marginTop: "8rem" }}>
           <HeadingWithSocials highLightTxt="FAQ / AI ლაბორატორიები" />
-          <section style={{ marginTop: "4rem" }}>
+          <section style={{ marginTop: "4rem", height: "840px" }}>
             <SubPageMainContent variant="labs" listData={AILabProjects} />
             <div></div>
           </section>
