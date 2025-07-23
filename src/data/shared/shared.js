@@ -120,7 +120,8 @@ export const FAQSmallCardsData = [
   {
     id: uuid(),
     img: FAQCardSmall2,
-    cardTxt: null,
+    cardTxt: "btu ai - sustainability lab პოდკასტების სერია!",
+    link: "https://btu.edu.ge/btu-ai-sustainability-lab-podkastebis-seria/",
   },
   {
     id: uuid(),

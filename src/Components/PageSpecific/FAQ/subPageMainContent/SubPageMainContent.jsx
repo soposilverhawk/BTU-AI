@@ -4,7 +4,7 @@ import InfoCard from "../../../Shared/InfoCard/InfoCard";
 
 function SubPageMainContent({ variant, listData }) {
   return (
-    <article style={{ width: "60%" }}>
+    <article>
       {variant === "labs" && (
         <>
           <Typography variant="body1">
