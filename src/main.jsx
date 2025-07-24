@@ -7,7 +7,7 @@ import { DesignProvider } from "./context/DesignProvider.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter basename="">
+    <BrowserRouter basename="/BTU-AI/">
       <DesignProvider>
         <App />
       </DesignProvider>
