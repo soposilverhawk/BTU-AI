@@ -10,6 +10,8 @@ function SubPageMainContent({ variant, listData }) {
         flexDirection: "column",
         gap: "1rem",
         textAlign: "justify",
+        width: "60%",
+        flexShrink: 0
       }}
     >
       {variant === "labs" && (
