@@ -1,8 +1,8 @@
 import React from "react";
-import HeroStatic from "../../Components/Shared/Hero/HeroStatic/HeroStatic";
+import FAQSubPagesLayout from "../../Components/PageSpecific/FAQ/FAQSubPagesLayout";
 
 function Blog() {
-  return <HeroStatic heroTitle="ბლოგი" />;
+  return <FAQSubPagesLayout heroTitle="ბლოგი" headingText={false} />;
 }
 
 export default Blog;

@@ -7,7 +7,7 @@ import { FAQSmallCardsData } from "../../../data/shared/shared";
 
 function FAQSubPagesLayout({
   heroTitle,
-  headingText,
+  headingText = true,
   leftContent,
   rightSidebar = <FAQCard variant="FAQSmallCard" data={FAQSmallCardsData} />,
   sectionStyleOverrides = {},
@@ -17,7 +17,7 @@ function FAQSubPagesLayout({
       <HeroStatic heroTitle={heroTitle} />
       <LayoutWrapper>
         <div style={{ width: "100%", marginTop: "8rem" }}>
-          <HeadingWithSocials highLightTxt={headingText} />
+          {headingText && <HeadingWithSocials highLightTxt={headingText} />}
           <section
             style={{
               width: "100%",
