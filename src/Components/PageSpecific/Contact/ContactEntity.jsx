@@ -6,7 +6,7 @@ function ContactEntity({ variant }) {
   const { colors } = useDesign();
   const entity = contactMethods[variant];
   return (
-    <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+    <address style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
       <img src={entity.icon} alt={entity.label} />
       <div
         style={{
@@ -19,7 +19,7 @@ function ContactEntity({ variant }) {
         <p>{entity.value}</p>
         {entity.extra && <p>{entity.extra}</p>}
       </div>
-    </div>
+    </address>
   );
 }
 
