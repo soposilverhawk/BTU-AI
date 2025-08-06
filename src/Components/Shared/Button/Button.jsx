@@ -15,7 +15,7 @@ function Button({ children = "", variant = "", onClick, width }) {
     color: "#fff",
     width: width ? width : null,
     border: "none",
-    backgroundColor: "transparent"
+    backgroundColor: "transparent",
   };
 
   const buttonType =
@@ -34,13 +34,23 @@ function Button({ children = "", variant = "", onClick, width }) {
           backgroundColor: "transparent",
           border: "1px solid #fff",
           borderRadius: borderRadius.btnCircle,
-          padding: spacing.sm
+          padding: spacing.sm,
+        }
+      : variant === "plainButton"
+      ? {
+          backgroundColor: colors.primaryPink,
+          border: "1px solid #fff",
+          padding: spacing.sm,
         }
       : {};
 
   return (
     <button
-      onClick={buttonType === "formSubmit" || buttonType === "chatSubmit" ? null : onClick }
+      onClick={
+        buttonType === "formSubmit" || buttonType === "chatSubmit"
+          ? null
+          : onClick
+      }
       type={buttonType}
       style={{ ...baseStyles, ...variantStyles }}
     >

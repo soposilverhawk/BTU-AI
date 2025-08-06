@@ -4,7 +4,6 @@ import BlogItem from "./BlogItem";
 function BlogList({ blogData, rangeEndidx }) {
   const blogsWrapperBase = {
     width: "60%",
-    backgroundColor: "red",
     display: "flex",
     flexDirection: "column",
     gap: "5rem",
