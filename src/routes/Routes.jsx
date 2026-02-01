@@ -10,7 +10,6 @@ const ROUTES = {
         FAQ_AI_STUDIES: "/FAQ/AI-researches",
         FAQ_AI_KNOWLEDGE: "/FAQ/AI-knowledge"
     },
-    BLOG: "/blog"
 }
 
 export default ROUTES;

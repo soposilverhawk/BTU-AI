@@ -39,11 +39,6 @@ export const appNavItems = [
     page: "FAQ",
     path: ROUTES.FAQ.MAIN,
   },
-  {
-    id: uuid(),
-    page: "ბლოგი",
-    path: ROUTES.BLOG,
-  },
 ];
 
 export const FAQNavigation = [
