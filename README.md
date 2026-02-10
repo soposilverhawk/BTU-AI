@@ -17,7 +17,7 @@ The objective of the project was to create a fully functional blog-like website 
 
 ### 🌐 Links
 
-- Live Site URL: [http://localhost:5173/BTU-AI/]
+- Live Site URL: [https://soposilverhawk.github.io/BTU-AI/]
 - GitHub Repository: [https://github.com/soposilverhawk/BTU-AI]
 
 ## My process
