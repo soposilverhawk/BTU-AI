@@ -1,12 +1,44 @@
-# React + Vite
+# BTU AI Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Table of contents
 
-Currently, two official plugins are available:
+- [Overview](#overview)
+  - [Links](#links)
+  - [Owner Access Guide](#owner-access-guide)
+- [My process](#my-process)
+  - [Features](#features)
+  - [Tech Stack](#tech-stack)
+  - [What I learned](#what-i-learned)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔍 Overview
 
-## Expanding the ESLint configuration
+This project is a final project of the front-end part of the web-development course "Women in AI" at Business Technologies University.
+The objective of the project was to create a fully functional blog-like website using React.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🌐 Links
+
+- Live Site URL: [http://localhost:5173/BTU-AI/]
+- GitHub Repository: [https://github.com/soposilverhawk/BTU-AI]
+
+## My process
+
+### 🧩 Features
+
+- 📍 Navigation - Seameless internal navigation with React Router.
+- 🧩 Reusable Components – Clean and modular component structure for scalability.
+- 🎨 Modern UI – Clean, minimal design with consistent styling.
+- 📱 Responsive Design – Fully optimized for mobile, tablet, and desktop screens.
+
+### 🛠️ Tech Stack
+
+- React/Next.js - Component-based UI and routing.
+- Vite/Next.js App Router - Fast development and build tooling.
+- Material UI (MUI) - For stylish, consistent and responsive UI components.
+- CSS Modules - Scope and maintainable styling.
+- Javascript (ES6+) - Core logic and interactivity.
+- LocalStorage - To store edited CV section data between sessions.
+- Custom Components - Reusable UI components
+
+### 📖 What I learned
+
+I dipped my toes in Next.js with Client side rendering in this project. I learned how navigation works and differs with Next.js compared to React. Apart from that, I learned how to work with environment variables and how to host a Next.js project using Vercel. I think this was a great first experience with Next.js and I plan to further utilize it and enhance my understanding in it.
