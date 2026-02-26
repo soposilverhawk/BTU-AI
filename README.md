@@ -31,14 +31,13 @@ The objective of the project was to create a fully functional blog-like website 
 
 ### 🛠️ Tech Stack
 
-- React/Next.js - Component-based UI and routing.
-- Vite/Next.js App Router - Fast development and build tooling.
+- React - Component-based UI and routing.
+- Vite - Fast development and build tooling.
 - Material UI (MUI) - For stylish, consistent and responsive UI components.
 - CSS Modules - Scope and maintainable styling.
 - Javascript (ES6+) - Core logic and interactivity.
-- LocalStorage - To store edited CV section data between sessions.
 - Custom Components - Reusable UI components
 
 ### 📖 What I learned
 
-I dipped my toes in Next.js with Client side rendering in this project. I learned how navigation works and differs with Next.js compared to React. Apart from that, I learned how to work with environment variables and how to host a Next.js project using Vercel. I think this was a great first experience with Next.js and I plan to further utilize it and enhance my understanding in it.
+I learned how to work with react, its routing system and how to create reusable components via props and built-in hooks. Apart from that, I learnt how to work with forms using controlled inputs and how to use context API to provide consistent information to my app without prop drilling (consistent styling in the case of this project). I also dipped my toes into creating custom hooks. Overall, this was a solid starter react project for me.
